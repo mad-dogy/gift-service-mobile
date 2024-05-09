@@ -1,0 +1,11 @@
+{
+  "i18next.i18nPaths": "/Users/lolitachernikova/Documents/GitHub/gift-service-mobile/giftServiceMobile/vendor/bundle/ruby/2.7.0/gems/i18n-1.14.5/lib/i18n,/Users/lolitachernikova/Documents/GitHub/gift-service-mobile/giftServiceMobile/vendor/bundle/ruby/2.7.0/gems/activesupport-7.0.8.1/lib/active_support/locale,/Users/lolitachernikova/Documents/GitHub/gift-service-mobile/giftServiceMobile/vendor/bundle/ruby/2.7.0/gems/i18n-1.14.5/lib/i18n/locale",
+  "editor.formatOnSave": false,
+  // disable editor formatting, so eslint can handle it
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}
