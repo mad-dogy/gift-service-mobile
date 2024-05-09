@@ -138,3 +138,6 @@ node_modules
 # react-native-config codegen
 ios/tmp.xcconfig
 .env
+
+# yarn
+.yarn

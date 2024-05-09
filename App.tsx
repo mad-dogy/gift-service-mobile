@@ -1,6 +1,7 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, useColorScheme } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { NavigationContainer } from '@react-navigation/native';
 
 import { Home } from './src/screens/Home/Home';
 
@@ -12,15 +13,17 @@ function App(): React.JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
-        <Home />
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={backgroundStyle}>
+        <StatusBar
+          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+          backgroundColor={backgroundStyle.backgroundColor}
+        />
+        <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
+          <Home />
+        </ScrollView>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
 
