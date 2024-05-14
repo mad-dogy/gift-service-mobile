@@ -8,11 +8,7 @@
       "@/features/*": ["./features/*"],
       "@/shared/*": ["./shared/*"],
       "@/screens/*": ["./screens/*"],
-      "@/app/*": ["./app/*"],
-
-      "@/store/*": ["./store/*"],
-
-      "@/navigation/*": ["./navigation/*"]
+      "@/app/*": ["./app/*"]
     }
   }
 }
