@@ -1,15 +1,18 @@
+import { HomeNavigatorTabParamList } from "@/shared/navigation";
+import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { Button, StyleSheet, Text, View } from "react-native";
 
-export const Main = ({ navigation }) => {
+type Props = BottomTabScreenProps<HomeNavigatorTabParamList, 'Home'>
+
+export const Main = (props: Props) => {
+  const {navigation} = props;
+
   return (
     <View style={styles.container}>
       <Text>Main Screen</Text>
       <Button
-        title="Go to Details"
-        onPress={() => navigation.push('Details', {
-          itemId: Math.floor(Math.random() * 100),
-          otherParam: 'from details screen'
-        })}
+        title="Go to Settings"
+        onPress={() => navigation.navigate("Settings", {userId: (Math.random() * 100).toFixed()})}
       />
 
     </View>

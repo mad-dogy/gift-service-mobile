@@ -1,9 +1,18 @@
+import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { StyleSheet, Text, View } from "react-native";
 
-export const Settings = () => {
+import { HomeNavigatorTabParamList } from "@/shared/navigation";
+
+type Props = BottomTabScreenProps<HomeNavigatorTabParamList, 'Settings'>
+
+export const Settings = (props: Props) => {
+  const { navigation, route } = props;
+  const { params } = route
+
   return (
     <View style={styles.container}>
       <Text>Settings Screen</Text>
+      <Text>{params.userId}</Text>
     </View>
   );
 }
