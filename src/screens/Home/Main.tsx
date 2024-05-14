@@ -1,4 +1,4 @@
-import { HomeNavigatorTabParamList } from "@/shared/navigation";
+import { HomeNavigatorTabParamList } from "@/shared/providers/navigation";
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { Button, StyleSheet, Text, View } from "react-native";
 

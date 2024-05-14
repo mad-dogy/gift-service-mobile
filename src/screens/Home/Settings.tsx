@@ -1,7 +1,7 @@
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { StyleSheet, Text, View } from "react-native";
 
-import { HomeNavigatorTabParamList } from "@/shared/navigation";
+import { HomeNavigatorTabParamList } from "@/shared/providers/navigation";
 
 type Props = BottomTabScreenProps<HomeNavigatorTabParamList, 'Settings'>
 
